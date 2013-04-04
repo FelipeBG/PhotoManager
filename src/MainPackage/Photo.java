@@ -1,6 +1,6 @@
-package MaximumPackage;
+package MainPackage;
 
-import MaximumGenerators.PhotoGenerator;
+import Lacunas.ZPhotoGeneratorOLD;
 import java.util.Date;
 
 public class Photo {
@@ -8,15 +8,15 @@ public class Photo {
     private float  size;
     private Date   date;
     private String description;
-    private String systemWay;
+    private String directory;
     private int    relevance;
     
-    public Photo () {
-        this.name        = PhotoGenerator.photoName();
-        this.size        = PhotoGenerator.photoSize();
-        this.date        = PhotoGenerator.photoDate();
-        this.description = PhotoGenerator.photoDescription();
-        this.relevance   = PhotoGenerator.photoRelevance();      
+    public Photo() {
+        this.name        = ZPhotoGeneratorOLD.photoName();
+        this.size        = ZPhotoGeneratorOLD.photoSize();
+        this.date        = ZPhotoGeneratorOLD.photoDate();
+        this.description = ZPhotoGeneratorOLD.photoDescription();
+        this.relevance   = ZPhotoGeneratorOLD.photoRelevance();      
     }
 
     public String getName() {

@@ -1,10 +1,10 @@
-package MaximumGenerators;
+package Lacunas;
 
 import java.util.Date;
 import java.util.GregorianCalendar;  
 import java.util.Random;
 
-public class PhotoGenerator {
+public class ZPhotoGeneratorOLD {
     
     static private String[] prefixName = {
         "Natal",
@@ -43,7 +43,7 @@ public class PhotoGenerator {
         Random rand = new Random();
         int number = rand.nextInt(100);
         if (number < 20){
-            return "This photo is so beautiful! Isn't it, Jocasta ?";
+            return "This photo is so beautiful!";
         }
         else {
             return "No comments on this Photo.";
