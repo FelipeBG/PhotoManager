@@ -11,12 +11,11 @@ public class Photo {
     private String directory;
     private int    relevance;
     
-    public Photo() {
-        this.name        = ZPhotoGeneratorOLD.photoName();
-        this.size        = ZPhotoGeneratorOLD.photoSize();
-        this.date        = ZPhotoGeneratorOLD.photoDate();
-        this.description = ZPhotoGeneratorOLD.photoDescription();
-        this.relevance   = ZPhotoGeneratorOLD.photoRelevance();      
+    public Photo(String name, float size, String description, int relevance) {
+        this.name        = name;
+        this.size        = size;
+        this.description = description;
+        this.relevance   = relevance;      
     }
 
     public String getName() {
@@ -40,13 +39,17 @@ public class Photo {
     }
     
     public static void main(String[] args) {
-        Photo A = new Photo();
+        String name = "teste";
+        float  size = 1;
+        String description = "teste";
+        int relevance = 5;
+                
+        Photo A = new Photo(name,size,description,relevance);
         
         System.out.println(A.getName());
         System.out.println(A.getSize());
         System.out.println(A.getDate());
         System.out.println(A.getDescription());
-        System.out.println(A.getRelevance());
-                           
+        System.out.println(A.getRelevance());                   
     }
 } 
